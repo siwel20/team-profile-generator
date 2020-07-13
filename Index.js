@@ -3,8 +3,10 @@ const inquirer = require("inquirer");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
+const generateBody = require("./src/body");
+const generateCard = require("./src/card");
 
-const data = {}
+const data = []
 
 
 const managerPrompt = () => {
@@ -96,7 +98,7 @@ const internPrompt = () => {
         let internName = internRes.internName;
         let internId = internRes.internId;
         let internEmail = internRes.internEmail;
-        let school = intern.school;
+        let school = internRes.school;
         const intern = new Intern (internName, internId, internEmail, school)
         data.push(intern);
         menuPrompt();
@@ -138,7 +140,7 @@ const menuPrompt = () => {
 
 const generateTemplate = function () {
     let cardHtml = ''
-    teamData.forEach(employee => {
+    data.forEach(employee => {
         cardHtml += generateCard(employee);
     })
     console.log("Congratulations! Your team is complete.")
