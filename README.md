@@ -47,5 +47,5 @@
   * Link to current repository: https://github.com/siwel20/team-profile-generator 
 
   ## Video Walkthrough
-  * Screencastify link for video walkthrough: https://drive.google.com/file/d/1-O51oN4mY-qarwno79Tnemach5PCvN1G/view?usp=sharing
+  * Screencastify link for video walkthrough: https://drive.google.com/file/d/1VIfw0p_jLqKnroQCwSh0glCNk9QuDhX7/view
   
