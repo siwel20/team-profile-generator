@@ -23,7 +23,7 @@ test("gets intern email", () => {
 })
 
 test("gets intern school info", () => {
-    expect(intern.getschool()).toEqual(expect.any(String));
+    expect(intern.getSchool()).toEqual(expect.any(String));
 })
 
 test("gets intern role", () => {
