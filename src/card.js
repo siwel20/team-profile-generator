@@ -13,7 +13,7 @@ const generateCard = function (employee) {
                         <li class="list-group-item">ID: ${employee.getId()}</li>
                         <li class="list-group-item">Email: <a href='mailto:${employee.getEmail()}'>${employee.getEmail()}</a></li>
                         <li class="list-group-item">
-                            ${employee.getRole() === "Manager" ? "Office Number: " + employee.getOffice() : employee.getRole() === "Engineer" ? `Github: <a href='http://github.com/${employee.getGithub()}' target="_blank"> ${employee.getGithub()} </a>` :
+                            ${employee.getRole() === "Manager" ? "Office Number: " + employee.getOfficeNumber() : employee.getRole() === "Engineer" ? `Github: <a href='http://github.com/${employee.getGitHub()}' target="_blank"> ${employee.getGitHub()} </a>` :
                             "School: " + employee.getSchool()}</li>
                 </div>
             </div>
